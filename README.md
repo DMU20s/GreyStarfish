@@ -1,5 +1,12 @@
 # GreyStarfish
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
-- Yet another data provider for PurpleFinch.
+A data provider for PurpleFinch.
+Gathers mouse cursor coordinates, and submits them to PurpleFinch.
 
-This one looks at, which parts of the screen, your mouse resides in the most.
+
+Check the PurpleFinch WIKI for protocol drafts...
+
+
+Made by:
+- [Emil "0xcyber-sketch" Langager Larsen](https://github.com/0xcyber-sketch)
