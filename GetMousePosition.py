@@ -4,26 +4,29 @@
 from pynput.mouse import Listener
 import time
 
-datalist = []
+alldatalist = []
+presseddatalist = []
+releaseddatalist = []
+
 
 #Define on click
 def on_click(x, y, button, pressed):
-    global datalist
+    
     #Prints 
     print('{0} at {1}'.format(
         'Pressed' if pressed else 'Released',
         (x, y)))
 
     #Appends pressed and released position
-    datalist.append((x,y))
+    alldatalist.append((x,y))
     
     
     
 
     # If this here. Only register one mouse click
-    if not pressed:
+    """if not pressed:
         # Stop listener
-        return False
+        return False"""
 
 test = True
 if __name__ == "__main__":
@@ -40,11 +43,19 @@ listener.start()
 while test:
     time.sleep(10)
     test = False
-
+# Stop listener
 listener.stop()
 
-print(datalist[0])
-
-print(datalist[1])
 
 
+# Split pressed data and released data up into two different list. Both could possibly be used 
+for i in range(len(alldatalist)):
+    if i == 0 or i % 2 == 0:
+        presseddatalist.append(alldatalist[i])
+    else:
+        releaseddatalist.append(alldatalist[i])
+
+
+print(presseddatalist)
+
+print(releaseddatalist)
