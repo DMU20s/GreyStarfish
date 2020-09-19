@@ -11,9 +11,8 @@ Setup:
 
 To run GreyStarFish you need to install the following python libaries:
 
-pynput - https://pypi.org/project/pynput/ 
-
-screeninfo - https://pypi.org/project/screeninfo/
+- pynput - https://pypi.org/project/pynput/ 
+- screeninfo - https://pypi.org/project/screeninfo/
 
 Note that GreyStarFish is written in python 3.8.5. This means that it is not compatiable with python 2
 
@@ -21,6 +20,7 @@ Note that GreyStarFish is written in python 3.8.5. This means that it is not com
 Sources: 
 
 https://stackoverflow.com/questions/3129322/how-do-i-get-monitor-resolution-in-python
+
 https://pynput.readthedocs.io/en/latest/
 
 Made by:
