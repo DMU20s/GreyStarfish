@@ -82,28 +82,30 @@ class MouseMonitor:
     def collect_data(self):
         width, height = GetDimensions.get_screen_size()
 
+
         for i in range(len(self.presseddatalist)):
             # Check height in the first if
             if 0 <= self.presseddatalist[i][1] <= height / 2:
                 # Check if click is on screen 1 - 3 based on coordinates
                 if 0 <= self.presseddatalist[i][0] <= width / 3.0:
                     self.press_screen_one.append(self.presseddatalist[i])
+
                 elif width / 3.0 <= self.presseddatalist[i][0] <= 2 * (width / 3.0):
                     self.press_screen_two.append(self.presseddatalist[i])
+
                 elif 2 * (width / 3.0) <= self.presseddatalist[i][0] <= width:
                     self.press_screen_three.append(self.presseddatalist[i])
-            # Same as above just for screen 4 - 6 TODO BUGS Running Around here
-            elif height / 2 <= self.presseddatalist[i][0] <= height:
-                if 0 <= self.presseddatalist[i][0] <= width / 3:
-                    print("Hello")
+            # Same as above just for screen 4 - 6 
+            elif height / 2 <= self.presseddatalist[i][1] <= height:
+                if 0 <= self.presseddatalist[i][0] <= width / 3.0:
                     self.press_screen_four.append(self.presseddatalist[i])
 
-                elif width / 3 <= self.presseddatalist[i][0] <= 2 * (width / 3):
+                elif width / 3.0 <= self.presseddatalist[i][0] <= 2 * (width / 3.0):
                     self.press_screen_five.append(self.presseddatalist[i])
-                    print("Hej")
-                elif 2 * (width / 3) <= self.presseddatalist[i][0] <= width:
+
+                elif 2 * (width / 3.0) <= self.presseddatalist[i][0] <= width:
                     self.press_screen_six.append(self.presseddatalist[i])
-                    print("Yo")
+
 
 
 if __name__ == "__main__":
