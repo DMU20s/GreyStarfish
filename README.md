@@ -16,6 +16,8 @@ To run GreyStarFish you need to install the following python libaries:
 
 Note that GreyStarFish is written in python 3.8.5. This means that it is not compatible with python 2
 
+GreyStarfish is compatible with Windows and Linux Ubunto 20.04. Tested 10/03/20
+
 
 Sources:
 
