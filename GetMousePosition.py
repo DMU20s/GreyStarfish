@@ -2,7 +2,8 @@
 
 # Mouse monitoring libary
 from pynput.mouse import Listener
-import time
+#import time
+from time import  sleep
 
 # Import other files in directory
 import GetDimensions
@@ -55,7 +56,7 @@ class MouseMonitor:
         listener.start()
         # This needs to be on a specific time or something
         while self.test:
-            time.sleep(10)
+            sleep(10) # Amount of time that the listner records the input.
             self.test = False
             # Stop listener
         listener.stop()
@@ -74,7 +75,6 @@ class MouseMonitor:
     # Return data
     def get_data(self):
 
-        # return self.presseddatalist, self.releaseddatalist
         return self.press_screen_one, self.press_screen_two, self.press_screen_three, self.press_screen_four, \
                self.press_screen_five, self.press_screen_six
 
