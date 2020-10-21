@@ -14,11 +14,12 @@ if __name__ == "__main__":
     my_class = GetMousePosition.MouseMonitor()
     my_class.run_listener()
 
-    t = Tx("pfgs", "mqtt.eclipse.org", "lol")
-    t.send_unenc(str(my_class.get_data()))
+
+    #t = Tx("pfgs", "mqtt.eclipse.org", "lol")
+    #t.send_unenc(str()
 
 
-    print(my_class.get_data())
+    #print(my_class.get_data())
     #getRegions.get_region(my_class.get_data())
 
 

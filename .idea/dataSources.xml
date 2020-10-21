@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="pfstorage@localhost" uuid="66be25f6-3a31-4bdd-82f9-c579024d9412">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/pfstorage</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="pfdeliveries@localhost" uuid="671427bb-bd97-461b-8ac1-62d806dd4289">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/pfdeliveries</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="pfrun@localhost" uuid="01cc77f5-0e0f-4197-a552-16775d35444b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/pfrun</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="pfinput@localhost" uuid="2bb619bf-53e9-4fb4-8e40-ae2bb6d15211">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/pfinput</jdbc-url>
+    </data-source>
+  </component>
+</project>
