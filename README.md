@@ -9,7 +9,7 @@ Check the PurpleFinch WIKI for protocol drafts...
 
 Setup:
 
-To run GreyStarFish you need to install the following python libaries:
+To run GreyStarFish you need to install the following python libraries:
 
 - pynput - https://pypi.org/project/pynput/
 - screeninfo - https://pypi.org/project/screeninfo/
