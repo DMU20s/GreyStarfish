@@ -36,7 +36,7 @@ class MouseMonitor:
             print(x, y)
 
     def send_thread(self):
-        threading.Timer(1, self.send_thread).start()
+        self.sending = threading.Timer(1, self.send_thread).start()
         if len(data_list) > 0:
 
         #self.t.send_unenc(str(data_list))
@@ -60,7 +60,7 @@ class MouseMonitor:
             self.run = False
             # Stop listener
         listener.stop()
-        threading.Thread.
+        #self.sending.cancel()
 
 
 # import threading
