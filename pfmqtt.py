@@ -1,6 +1,7 @@
 import base64
+
 import paho.mqtt.publish as publish
-import timeit
+
 
 class Tx:
 	"""MQTT transmitter class for PurpleFinch."""

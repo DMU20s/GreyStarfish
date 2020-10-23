@@ -10,7 +10,6 @@ def get_region(xy_coordinates):
     region_five = []
     region_six = []
 
-
     for i in range(len(xy_coordinates)):
         # Check height in the first if
         if 0 <= xy_coordinates[i][1] <= height / 2:

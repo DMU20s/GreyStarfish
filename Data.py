@@ -6,8 +6,6 @@ def create_data():
 def add_data(list1, list2, list3, list4, list5, list6):
     temp = [list1, list2, list3, list4, list5, list6]
 
-
-
     for i in temp:
         help_add_data(i)
         with open("data.txt", "a+") as f:
@@ -23,7 +21,7 @@ def help_add_data(list1):
             with open("data.txt", "a+") as f:
                 f.write(str(list1[i]))
 
+
 def empty_data():
     with open ("data.txt", "w") as f:
         f.truncate(0)
-

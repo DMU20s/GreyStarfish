@@ -1,11 +1,7 @@
-#!/usr/bin/env python
-
-# Third party libraries
-from screeninfo import get_monitors
 import re
+from screeninfo import get_monitors
 
 
-# return the size of the monitor
 def get_screen_size():
     width = 0
     height = 0
@@ -19,5 +15,3 @@ def get_screen_size():
     height = size[3]
 
     return int(width), int(height)
-
-
