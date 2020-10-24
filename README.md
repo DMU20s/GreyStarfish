@@ -7,6 +7,16 @@ Gathers mouse cursor coordinates, and submits them to PurpleFinch.
 
 Check the PurpleFinch WIKI for protocol drafts...
 
+Overview:
+
+main.py is the script that runs greystarfish and its functionality.
+
+get_dimensions.py is a script used to get the diminsions of the current monitor.
+
+pfmqtt.py is the scrift that transmit the data from greystarfish to PF (Purple Finch).
+
+get_positions.py
+
 Setup:
 
 To run GreyStarFish you need to install the following python libraries:
@@ -16,10 +26,12 @@ To run GreyStarFish you need to install the following python libraries:
 
 Note that GreyStarFish is written in python 3.8.5. This means that it is not compatible with python 2
 
-GreyStarfish is compatible with Windows and Linux Ubunto 20.04. Tested 10/03/20
+GreyStarfish is compatible with Windows and Linux Ubunto 20.04. Tested 10/03/20. Not Mac 
+
+Run:
 
 
-Sources:
+Sources: 
 
 https://stackoverflow.com/questions/3129322/how-do-i-get-monitor-resolution-in-python
 
