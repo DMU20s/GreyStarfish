@@ -20,7 +20,7 @@ class MouseMonitor:
 
 	# Define on click
 	def click_event(self, x, y, button, pressed):
-		# Appends pressed and released position
+		# Appends pressed position
 		if pressed:
 			# Captures data and converts it to json
 			self.data_list.update({str(datetime.timestamp(datetime.now())): {"x": x, "y": y}})
@@ -49,8 +49,4 @@ class MouseMonitor:
 		self.thread_run = False
 
 
-# ['{"x": 782, "y": 242, "timestamp": 1603572911.039759}']
 
-# {x, y, ts}
-# {{x, y, ts}, {x, y, ts}, {x, y, ts}, {x, y, ts}}
-# {{x, y, ts}}
